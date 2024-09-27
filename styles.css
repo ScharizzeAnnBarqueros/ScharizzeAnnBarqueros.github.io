@@ -14,7 +14,7 @@ body {
     overflow: hidden;
     position: relative;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-} /* Missing closing bracket added here */
+} 
 
 .container {
     text-align: center;
@@ -23,11 +23,11 @@ body {
 header h1 {
     font-family: 'Playfair Display SC', serif;
     font-size: 3rem;
-    color: #ffffff; /* Fallback color */
+    color: #ffffff; 
     background: linear-gradient(to right, #1a2222, #330867);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Make the text transparent to show the gradient */
+    color: transparent; 
 }
 
 header p {
