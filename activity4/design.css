@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3D2C8;
+    font-family: 'Montserrat', serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#p1 {
+    margin: 20px auto;
+    font-size: 1.3rem;
+    color: #000;
+    max-width: 600px;
+}
+
+.specifications {
+    background-color: #CEB2BE;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom:20px;
+}
+
+.specs-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+li {
+    margin-left: 200px;
+    font-size: 1.3rem;
+    margin-top: 15.9px;
+    color: #000;
+}
+
+.specs-image {
+    width: 500px;
+    height: 600px;
+    max-width: 800px;
+    margin-left: 5px; /* Adjust the space between text and image */
+    margin-right:150px;
+}
+
+/* Flexbox container to stack the title and color boxes */
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Title for the colors section */
+#h3 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the color boxes */
+.color-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Each color box */
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+}
+
+/* Style for the rounded corner boxes */
+.rcorners {
+    border-radius: 25px;
+    background: #482B41;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+
+.color-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 0px;
+}
+
+/* Style for the text below each box */
+.color-box p {
+    font-size: 1.3rem;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
