@@ -65,11 +65,10 @@ li {
     width: 500px;
     height: 600px;
     max-width: 800px;
-    margin-left: 5px; /* Adjust the space between text and image */
+    margin-left: 5px; 
     margin-right:150px;
 }
 
-/* Flexbox container to stack the title and color boxes */
 .colors {
     display: flex;
     flex-direction: column;
@@ -77,7 +76,6 @@ li {
     margin-top: 50px;
 }
 
-/* Title for the colors section */
 #h3 {
     font-size: 2.5rem;
     color: #000;
@@ -85,14 +83,12 @@ li {
     margin-bottom: 20px;
 }
 
-/* Flexbox container for the color boxes */
 .color-boxes {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Each color box */
 .color-box {
     display: flex;
     flex-direction: column;
@@ -100,7 +96,6 @@ li {
     margin-right: 0;
 }
 
-/* Style for the rounded corner boxes */
 .rcorners {
     border-radius: 25px;
     background: #482B41;
@@ -118,7 +113,6 @@ li {
     margin-right: 0px;
 }
 
-/* Style for the text below each box */
 .color-box p {
     font-size: 1.3rem;
     color: #000;
