@@ -5,57 +5,124 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-} /* Missing closing bracket added here */
+    background-color: #E3D2C8;
+    font-family: 'Montserrat', serif;
+}
 
 .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
     text-align: center;
+    margin-top: 50px;
 }
 
-header h1 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 3rem;
-    color: #ffffff; /* Fallback color */
-    background: linear-gradient(to right, #1a2222, #330867);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; /* Make the text transparent to show the gradient */
+#h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
 }
 
-header p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    color: #140909;
-    margin-bottom: 3rem;
+#p1 {
+    margin: 20px auto;
+    font-size: 1.3rem;
+    color: #000;
+    max-width: 600px;
 }
 
-.projects {
+.specifications {
+    background-color: #CEB2BE;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom:20px;
+}
+
+.specs-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+li {
+    margin-left: 200px;
+    font-size: 1.3rem;
+    margin-top: 15.9px;
+    color: #000;
+}
+
+.specs-image {
+    width: 500px;
+    height: 600px;
+    max-width: 800px;
+    margin-left: 5px; /* Adjust the space between text and image */
+    margin-right:150px;
+}
+
+/* Flexbox container to stack the title and color boxes */
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Title for the colors section */
+#h3 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the color boxes */
+.color-boxes {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
-.project-button {
-    background-color: #2F4F4F;
-    color: #fff;
-    padding: 1rem 2rem;
-    border: 2px solid #1d3b3b;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Each color box */
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
 }
 
-.project-button:hover {
-    background-color: #4d4d91;
-    border: 2px solid #242464;
-    transform: translateY(-5px);
+/* Style for the rounded corner boxes */
+.rcorners {
+    border-radius: 25px;
+    background: #482B41;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+}
+
+.color-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 0px;
+}
+
+/* Style for the text below each box */
+.color-box p {
+    font-size: 1.3rem;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
 }
