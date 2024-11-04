@@ -147,7 +147,7 @@
           const imageUrl = `${baseUrl}/characters/${apiKey}/icon-big`;
 
           characterCard.innerHTML = `
-            <a href="characterInfo.html?name=${encodeURIComponent(character.name)}">
+            <a href="view.html?name=${encodeURIComponent(character.name)}">
               <div class="card">
                 <img class="character-img" src="${imageUrl}" onerror="this.src='fallback-image-url.png'" alt="${character.name}">
                 <div class="character-name-container">
