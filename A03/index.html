@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spirited Away Movie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Make the header image cover the entire background */
+        .imgherosection {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Full screen height */
+            overflow: hidden;
+        }
+
+        .imgherosection img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the image covers the entire area without stretching */
+        }
+
+        /* Style for the overlay text */
+        .overlayText {
+            position: absolute;
+            top: 80%;
+            left: 10%;
+            right: 10%;
+            transform: translateY(-50%);
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            /* Ensure the text is above the image */
+        }
+
+        .overlayText h1 {
+            font-size: 5rem;
+        }
+
+        .gallery h3 {
+            text-align: center;
+        }
+
+        .poster {
+            margin-left: 10%;
+            margin-right: 3%;
+        }
+
+        .gallery {
+            margin: 0 5%;
+        }
+
+        .containerGallery {
+            background: #A6C4B6;
+            margin-top: 0;
+        }
+        .containerGallery.dark-mode {
+    background-color: #2E4B3C;
+}
+
+        
+        .card-img-top {
+            width: 100%;
+            /* Ensures the image takes the full width of the card */
+            height: 200px;
+            /* Sets a fixed height for the images */
+            object-fit: cover;
+        }
+
+        .containerQuote {
+            text-align: center;
+            padding: 5%;
+            font-size: large;
+        }
+
+        .maincharacters h3 {
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+        }
+
+        .container ul {
+            margin-left: 0%;
+
+        }
+
+        .synopsis {
+            font-size: 1.5rem;
+        }
+
+        .bg-overlay {
+            background-image: url('your-background-image.jpg');
+            /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .text-light h4,
+        .text-light p,
+        .text-light ul {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .streaming-icons img {
+            margin-right: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-section {
+            background-color: #243a2f;
+        }
+
+        .footer-section h4,
+        .footer-section p,
+        .footer-section ul {
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+            /* Text shadow for readability */
+        }
+
+         /* Light Mode (default) */
+         body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #A6C4B6;
+        }
+
+        .navbar.dark-mode {
+            background-color: #2E4B3C;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar.dark-mode a {
+            color: lightgray;
+        }
+
+        .mode-toggle-btn {
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <body class="light-mode">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                </button>
+                    <button class="mode-toggle-btn" id="modeToggle">🌙</button>
+                </div>
+            </div>
+        </nav>
+    <div class="imgherosection">
+        <img src="https://images7.alphacoders.com/104/1049285.jpg" class="img-fluid" alt="Spirited Away Background">
+
+        <div class="overlayText">
+            <h1 class="display-3 display-md-2 display-lg-1">Spirited Away</h1>
+            <p class="fs-5 fs-md-4">2001 | Fantasy/Adventure | 2h 5m</p>
+            <div class="synopsis">
+                <div class="synopsis">
+                    <p id="synopsisShort">Chihiro’s family is moving to a new house, but when they stop on the way to
+                        explore an abandoned village...</p>
+                    <p id="synopsisFull" style="display: none;">Chihiro’s family is moving to a new house, but when they
+                        stop on the way to explore an abandoned village, her parents undergo a mysterious transformation
+                        and Chihiro is whisked into a world of fantastic spirits ruled over by the sorceress Yubaba. Put
+                        to work in a magical bathhouse for spirits and demons, Chihiro must use all her wits to survive
+                        in this strange new place, find a way to free her parents and return to the normal world. </p>
+                    <button class="btn btn-outline-light" id="toggleButton" onclick="toggleSynopsis()">More</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="containerGallery pb-5">
+        <div class="gallery">
+            <div class="row">
+                <div class="galleryText p-5">
+                    <h3 class="display-3">Gallery</h3>
+                </div>
+                <div class="row" id="imgContainer">
+                    <!-- Images will be dynamically added here -->
+                </div>
+
+                <div class="containerQuote">
+                    <h4>“Once You've Met Someone You Never Really Forget Them. It Just Takes A While For Your Memories
+                        To Return.”</h4>
+                </div>
+
+            </div>
+
+            <div class="containerCharacters  m-5" id="moreContent">
+                <div class="characters">
+                    <div class="row">
+                        <div class="maincharacters p-5">
+                            <h3 class="display-3">Main Characters</h3>
+                        </div>
+                        <div class="row" id="imgCharacter">
+                            <!-- Images will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid p-5 footer-section text-light">
+            <div class="footer-text">
+                <div class="row align-items-center">
+                    <!-- Voice Cast Column -->
+                    <div class="col-md-4">
+                        <h4>Voice Cast:</h4>
+                        <ul>
+                            <li>Rumi Hiiragi as Chihiro</li>
+                            <li>Miyu Irino as Haku</li>
+                            <li>Mari Natsuki as Yubaba, Zeniba</li>
+                            <li>Yūmi Tamai as Rin</li>
+                            <li>Yasuko Sawaguchi as Chihiro's mother</li>
+                            <li>Takeshi Naitō as Chihiro's father</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Original Title Column -->
+                    <div class="col-md-4">
+                        <h4>Original Title:</h4>
+                        <p>千と千尋の神隠し, Sen to Chihiro no Kamikakushi</p>
+                        <h4>Director:</h4>
+                        <p>Hayao Miyazaki</p>
+                        <h4>Production company:</h4>
+                        <p>Studio Ghibli</p>
+                    </div>
+    
+                    <!-- Where to Watch Column -->
+                    <div class="col-md-4">
+                        <h4>Where To Watch:</h4>
+                        <div class="streaming-icons">
+                            <img src="assets/netflix.png" alt="Netflix" class="img-fluid" width="50">
+                            <img src="assets/hulu.jpg" alt="Hulu" class="img-fluid" width="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var pics = ["pic1.avif", "pic2.avif", "pic3.avif", "pic4.avif", "pic5.avif", "pic6.avif", "pic7.avif", "pic8.avif", "pic9.avif", "pic10.avif", "pic11.avif", "pic12.avif"];
+
+        // This loop creates and appends cards to the imgContainer element
+        for (var i = 0; i < pics.length; i++) {
+            var myContainer = document.getElementById("imgContainer");
+            myContainer.innerHTML += `
+            <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                <div class="card my-3" id="c${i}" onmouseenter="addShadow('c${i}')" onmouseleave="removeShadow('c${i}')">
+                    <img src="assets/${pics[i]}" class="card-img-top" alt="${pics[i]}">
+                </div>
+            </div>`;
+        }
+        var names = ["Chihiro", "Haku", "Yubaba", "No Face"];
+        var characterPics = ["chihiro.jpg", "haku.jpg", "yubaba.jpg", "noface.jpg"];
+
+        // This loop creates and appends cards to the imgContainer element
+        for (var i = 0; i < characterPics .length; i++) {
+            var myContainer = document.getElementById("imgCharacter");
+            myContainer.innerHTML += `
+    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <div class="card my-3" id="c${i}" onmouseenter="addShadow('c${i}')" onmouseleave="removeShadow('c${i}')">
+            <img src="assets/${characterPics [i]}" class="card-img-top" alt="${names[i]}">
+            <div class="card-body">
+                <p class="card-text text-center">${names[i]}</p>
+             </div>    
+        </div>
+    </div>`;
+        }
+        function addShadow(id) {
+            document.getElementById(id).classList.add('shadow-lg');
+        }
+
+        function removeShadow(id) {
+            document.getElementById(id).classList.remove('shadow-lg');
+        }
+
+
+
+        function toggleSynopsis() {
+            var shortText = document.getElementById("synopsisShort");
+            var fullText = document.getElementById("synopsisFull");
+            var button = document.getElementById("toggleButton");
+
+            if (fullText.style.display === "none") {
+                fullText.style.display = "block";
+                shortText.style.display = "none";
+                button.innerHTML = "Less";
+            } else {
+                fullText.style.display = "none";
+                shortText.style.display = "block";
+                button.innerHTML = "More";
+            }
+        }
+
+
+        // Function to adjust the position of the text
+        function adjustTextPosition() {
+            var overlayText = document.querySelector('.overlayText');
+
+            if (window.innerWidth <= 576) {
+                // Move the text up when the screen width is 576px or less
+                overlayText.style.top = '45%'; // You can adjust this percentage
+            } else {
+                // Default positioning for larger screens
+                overlayText.style.top = '50%'; // Adjust back to the default
+            }
+        }
+
+        // Call function when the window is resized
+        window.addEventListener('resize', adjustTextPosition);
+
+        // Call function when the page loads
+        window.addEventListener('load', adjustTextPosition);
+
+
+        const modeToggleBtn = document.getElementById('modeToggle');
+const body = document.body;
+const navbar = document.querySelector('.navbar');
+const containerGallery = document.querySelector('.containerGallery'); // Select the gallery container
+
+// Add click event listener to the button
+modeToggleBtn.addEventListener('click', function () {
+    // Toggle between light and dark mode
+    body.classList.toggle('dark-mode');
+    navbar.classList.toggle('dark-mode');
+    containerGallery.classList.toggle('dark-mode'); // Toggle dark mode for the gallery
+
+    // Change the icon of the button
+    if (body.classList.contains('dark-mode')) {
+        modeToggleBtn.innerHTML = '☀️'; // Sun icon for light mode
+    } else {
+        modeToggleBtn.innerHTML = '🌙'; // Moon icon for dark mode
+    }
+});
+
+    </script>
+
+    </script>
+
+    </script>
+</body>
+
+</html>
