@@ -1,0 +1,89 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+}
+.section1{
+    margin-top: 20%;
+    background-color: black;
+    color:white;
+    padding:9%;
+    font-size: 300%;
+}
+
+.section2{
+    background-color: black;
+    color:white;
+    text-align: center;
+
+}
+.rules{
+    text-align: left;
+    margin-top:10%;
+    margin-right:10%;
+    justify-content: center;
+
+}
+
+.rules h3{
+    margin-left:15%;
+    padding-top: 2%;
+
+}
+.rules p{
+    margin-left:19%;
+    padding-top: 2%;
+    font-size: 14px;
+    font-size: 20px
+}
+.rules h3{
+    font-size: 30px
+
+}
+
+
+/* .text-white {
+    color: white */
+/* h3 {
+    font-family: 'Rubik Glitch', sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+h1 {
+    font-size: larger;
+    color: #FADB0E;
+}
+
+p,
+h1 {
+    font-family: 'Special Elite', monospace;
+}
+
+h4 {
+    font-family: 'Imprima';
+    color: white;
+    font-size: 12px;
+    padding-top: 2%;
+    text-align: left;
+
+}
+
+title {
+    font-family: Rubik Glitch;
+    text-align: center;
+    font-size: larger;
+    margin-top: 30%;
+    background-color: black;
+    color: white;
+    padding: 6%;
+} */
