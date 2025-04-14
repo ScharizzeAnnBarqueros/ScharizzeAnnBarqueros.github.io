@@ -1,4 +1,4 @@
-
+<style>
 .main-content h1,
 .main-content h2 {
     color: #333;
@@ -42,7 +42,6 @@
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    background-color: #a1e3a1;
 
 }
 
@@ -96,4 +95,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.p{
+    font-family: Hanken Grotesk, sans-serif;
 }
