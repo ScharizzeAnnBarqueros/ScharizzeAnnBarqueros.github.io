@@ -1,0 +1,43 @@
+body {
+  background: url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  z-index: 1;
+}
+
+.header {
+  font-size: 150px;
+  font-family: Rubik Glitch;
+  color: #E982C0;
+  font-weight: 100;
+}
+
+.backHome {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.backHome:hover {
+  background-color: #0056b3;
+}
+
+
+.message {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-bottom: 2%;
+
+}
