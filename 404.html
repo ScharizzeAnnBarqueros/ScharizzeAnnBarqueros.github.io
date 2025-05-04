@@ -8,14 +8,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
     <link href="assets/img/404icon.png" rel="icon" type="image/png">
     <link rel="stylesheet" href="assets/css/404.css">
+    
 
   </head>
 
   <body>
+    <style>
+      body {
+  background: url('assets/img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  z-index: 1;
+}
+
+.header {
+  font-size: 150px;
+  font-family: Rubik Glitch;
+  color: #E982C0;
+  font-weight: 100;
+}
+
+.backHome {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.backHome:hover {
+  background-color: #0056b3;
+}
+
+
+.message {
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-bottom: 2%;
+
+}
+    </style>
     <div class="container">
-      <div class="header">404</div>
-      <div class="message pb-5">Oops! The page you are looking for does not exist.</div>
-        <a href="index.html" class="backHome">Go Back Home</a>
+      <div class="header">Page Not Found</div>
+      <div class="message pb-5">Sorry, we couldn’t find the page you’re looking for.</div>
+        <a href="../" class="backHome">Go Back Home</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
