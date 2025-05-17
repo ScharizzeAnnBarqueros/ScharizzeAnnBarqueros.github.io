@@ -37,7 +37,7 @@ var total = 0;
 function loadCategories() {
     var categoriesContainer = document.getElementById("categories");
 
-    categories.forEach(function (category) {
+    categories.forEach((category) => {
         categoriesContainer.innerHTML +=
             `<div onclick="getAllProducts('` + category.categoryID + `')" class="button-category p-3 m-2">
                 <div class="category-name px-3">` + category.name + `</div>

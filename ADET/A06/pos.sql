@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2025 at 05:44 PM
+-- Generation Time: May 17, 2025 at 06:00 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -80,7 +80,7 @@ INSERT INTO `products` (`productID`, `categoryID`, `name`, `code`, `price`, `pic
 (14, 3, 'Platform Ankle Boots', 'PAB', 1800, 'prod18.webp'),
 (15, 3, 'Lebanon Ankle Boots', 'LAB', 1600, 'prod17.webp'),
 (16, 4, 'Stars Ring', 'SR', 200, 'prod24.webp'),
-(17, 4, 'Band-Aid Nose Clip Jewelry', 'BACJ', 120, 'prod12.webp'),
+(17, 4, 'Band-Aid Nose Clip Jewelry', 'BACJ', 120, 'prod22.webp'),
 (18, 4, 'Grunge Bear Heart Earrings', 'GBHE', 250, 'prod20.webp'),
 (19, 4, 'Grunge Aesthetic Star Leather Bracelet', 'GASLB', 300, 'prod23.webp'),
 (20, 4, 'Silver Star and Crystal Open Bracelet', 'SSCOB', 250, 'prod1.webp'),
